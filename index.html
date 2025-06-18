@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="This web application, developed with HTML, CSS, and JavaScript, aims to calculate a person's Body Mass Index (BMI) based on their weight and height. It provides a simple and intuitive interface so users can quickly obtain their results and learn their classification based on the value obtained.">
+    <meta name="keywords" content="JavaScript, IMC, Calculadora">
+    <meta name="sitedomain" content="https://github.com/juanscr24/SPA_IMC/tree/develop">
+    <meta name="organization" content="juanscr24">
+    <meta name="author" content="Juan Sebastian Cardona Rengifo">
+    <meta name="designer" content="Juan Sebastian Cardona Rengifo">
+    <meta name="copyright" content="© 2025 juanscr24. All rights reserved">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="15days">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/img/logo.webp" type="image/x-icon">
+    <title>Calcular Edad</title>
 </head>
+
 <body>
-    
+    <main>
+        <section class="container">
+            <h1>Calcular Edad</h1>
+            <div>
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" placeholder="Ej: Juan">
+            </div>
+            <div>
+                <label for="edad">Enter your age:</label>
+                <input type="number" id="edad" placeholder="Ej: 24">
+            </div>
+
+            <button id="btn-execute">Send</button>
+
+            <h3 class="result" id="result"></h3>
+        </section>
+    </main>
+    <script src="src/js/main.js"></script>
 </body>
+
 </html>

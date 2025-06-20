@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This web application, developed with HTML, CSS, and JavaScript, aims to calculate a person's Body Mass Index (BMI) based on their weight and height. It provides a simple and intuitive interface so users can quickly obtain their results and learn their classification based on the value obtained.">
+    <meta name="keywords" content="JavaScript, IMC, Calculadora">
+    <meta name="sitedomain" content="https://github.com/juanscr24/SPA_IMC/tree/develop">
+    <meta name="organization" content="juanscr24">
+    <meta name="author" content="Juan Sebastian Cardona Rengifo">
+    <meta name="designer" content="Juan Sebastian Cardona Rengifo">
+    <meta name="copyright" content="© 2025 juanscr24. All rights reserved">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="15days">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/img/logo.webp" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0b06eaa0c3.js" crossorigin="anonymous"></script>
+    <title>Calcular Edad</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sistema interactivo de mensajes</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div>
+                <label for="name">Ingresa tu nombre:</label>
+                <i class="fa-solid fa-user"><input type="text" id="name" placeholder="Ej: Juan"></i>
+                <span class="message" id ='name_warning'>.....</span>
+            </div>
+            <div>
+                <label for="edad">Ingresa tu edad:</label>
+                <i class="fa-regular fa-calendar"><input type="number" id="edad" placeholder="Ej: 24"></i>
+                <p class="message" id="age_warning">.....</p>
+            </div>
+            <button id="btn-execute">Enviar</button>
+        </section>
+    </main>
+    <footer>
+        <h3 class="result" id="result">.....</h3>
+    </footer>
+    <script src="src/js/ sistema_interactivo.js"></script>
+</body>
+</html>

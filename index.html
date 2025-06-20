@@ -18,28 +18,32 @@
     <meta name="revisit-after" content="15days">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="shortcut icon" href="src/img/logo.webp" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0b06eaa0c3.js" crossorigin="anonymous"></script>
     <title>Calcular Edad</title>
 </head>
 
 <body>
+    <header>
+        <h1>Sistema interactivo de mensajes</h1>
+    </header>
     <main>
         <section class="container">
-            <h1>Calcular Edad</h1>
             <div>
-                <label for="name">Enter your name:</label>
-                <input type="text" id="name" placeholder="Ej: Juan">
+                <label for="name">Ingresa tu nombre:</label>
+                <i class="fa-solid fa-user"><input type="text" id="name" placeholder="Ej: Juan"></i>
+                <span class="message" id ='name_warning'>.....</span>
             </div>
             <div>
-                <label for="edad">Enter your age:</label>
-                <input type="number" id="edad" placeholder="Ej: 24">
+                <label for="edad">Ingresa tu edad:</label>
+                <i class="fa-regular fa-calendar"><input type="number" id="edad" placeholder="Ej: 24"></i>
+                <p class="message" id="age_warning">.....</p>
             </div>
-
-            <button id="btn-execute">Send</button>
-
-            <h3 class="result" id="result"></h3>
+            <button id="btn-execute">Enviar</button>
         </section>
     </main>
-    <script src="src/js/main.js"></script>
+    <footer>
+        <h3 class="result" id="result">.....</h3>
+    </footer>
+    <script src="src/js/ sistema_interactivo.js"></script>
 </body>
-
 </html>
